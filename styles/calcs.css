@@ -1,0 +1,283 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/10/2019, 11:57:47
+    Author     : paulo
+*/
+html, body{
+                height: 100%;
+            }
+            .geral{
+                min-height: 100%;
+                background-color: #f4f4f4;
+                font-family: sans-serif;
+                position: absolute;
+                font-size: 18px;
+            }
+            
+            .corpo{
+                position: relative;
+                color: #162E40;
+                padding-left: 1%;
+                padding-right:1%;
+                text-align: left;
+                margin-left: 9%;
+                margin-right: 9%;
+                margin-top: 2%;
+                border-bottom: 1px red;
+            }
+            h1{
+                color: #162E40;
+            }
+            .calc{
+                float: right;
+                width: 30%;
+                overflow: auto;
+            }
+            .texto{
+                float: left;
+                width: 70%;
+            }
+            .texto a:visited{
+                text-decoration: none;
+                color: #162E40;
+            }
+            .texto a:link{
+                color: #162E40;
+            }
+            .forum{
+                float: left;
+                width: 100%;
+                padding-bottom: 200px;
+                font-size: 16px;
+                margin-top: 30px;
+            }
+            .titulop{
+                font-size: 45px;
+                font-weight: bold;
+            }
+            .usuariop{
+                font-size: 18px;
+            }
+            .datap{
+                font-size: 18px;
+            }
+            .pergunta{
+                font-size: 18px;
+                overflow: auto;
+                height: auto;
+                min-width:100%;
+                width: auto;
+                max-width: 200px;
+                max-height: 180px;
+            }
+            
+            .usuarior{
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .datar{
+                font-size: 17px;
+                font-weight: bold;
+                min-width: 30%;
+            }
+            .resposta{
+                font-size: 18px;
+                overflow: auto;
+                height: auto;
+                min-width:100%;
+                width: auto;
+                max-width: 200px;
+                max-height: 100px;
+                margin-bottom: 10px;
+            }
+            .texto fieldset{
+                border-color: #418BC0;
+                border-radius: 8px;
+            }
+            
+            .calc fieldset{
+                border-color: #418BC0;
+                border-radius: 8px;
+            }
+            
+            .fieldsetex{
+               border-color: #418BC0;
+               border-radius: 8px;
+               padding-top: 0px;
+            }
+            .fieldsetint{
+               border-color: #418BC0;
+               border-radius: 8px;
+               padding-top: 0px;
+               height: auto;
+               max-height: 210px;
+               padding-bottom: 20px;
+            }
+            
+            fieldset{
+                border-color: #ffca15;
+                border-radius: 8px;
+            }
+            
+            .ia{
+                width: 50px;
+                border-radius: 5px;
+                border:2px solid #418BC0;
+                padding-left: 1px;
+            }
+            .enviarb { 
+                background-color: white;
+   color: #418BC0;
+   border: 3px solid #418BC0;
+   margin-top: 5px;
+   padding: 4px;
+   font-size: 14px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 10px;
+            }  
+            .enviarb:hover { 
+                background-color: #418BC0;
+                color: white
+            }
+            .enviarb:disabled{
+                cursor: not-allowed;
+            }
+            .filtro { 
+                background-color: white;
+   color: #ffca15;
+   border: 3px solid #ffca15;
+   margin-top: 5px;
+   padding: 4px;
+   font-size: 14px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 10px;
+            }  
+            .filtro:hover { 
+                background-color: #ffca15;
+                color: white
+            }
+            .excluir {
+                float: right;
+   background-color: white;
+   color: red;
+   border: 3px solid red;
+   margin-top: 5px;
+   padding: 4px;
+   font-size: 14px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 10px;
+            
+}
+.excluir:hover {
+   background-color: red;
+   color: white
+}
+.l-d:focus{
+    outline: none;
+}   
+.enviarb:focus{
+    outline: none;
+}
+.filtro:focus{
+    outline: none;
+}
+.excluir:focus{
+    outline: none;
+}
+
+       
+.textarea{
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+.titu{
+    width: 300px;
+}
+.post {
+    display:none;
+}
+
+            @media screen and (max-width: 640px) {
+                .calc{
+                    float: none;
+                    width: 100%;
+                }
+                .texto{
+                    float: none;
+                    width: 100%;
+                }
+                .pergunta{
+                    margin-bottom: 5%
+                }
+} 
+@media only screen and (max-device-width: 900px) {
+    .calc{
+                    float: none;
+                    width: auto;
+                    max-width: 800px;
+                }
+                .calc img{
+                    zoom: 2.5;
+                }
+                .texto{
+                    float: none;
+                    width: 100%;
+                }
+                .pergunta{
+                    margin-bottom: 5%
+                }
+
+.geral{
+    font-size: 30px
+}
+.forum{
+    font-size: 30px;
+}
+.enviarb{
+    font-size: 25px;
+}
+.ia{
+    font-size: 25px;
+}
+.filtro{
+    font-size: 25px;
+}
+.titu{
+    height: 50px;
+}
+.usuarior{
+    font-size: 25px;
+}
+.resposta{
+    font-size: 25px;
+}
+.datar{
+    font-size: 25px;
+}
+.excluir{
+    font-size: 30px;
+}
+.l-d{
+    height: 80px;
+    width: 80px
+}
+.titulop{
+    font-size: 60px;
+}
+.usuariop{
+    font-size: 30px;
+}.datap{
+    font-size: 30px;
+}
+.pergunta{
+font-size: 30px;
+}
+}

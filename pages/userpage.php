@@ -145,7 +145,7 @@ function confirmacao(){
     $contn->execute();
     
     while ($rs = $contn->fetch(PDO::FETCH_OBJ)) {
-        echo "<a href='$rs->endConteudo'>+ $rs->nomeConteudo</a><br>";
+        echo "<a href='../calcsPages/$rs->endConteudo'>+ $rs->nomeConteudo</a><br>";
     }
     ?>
 </div>

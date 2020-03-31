@@ -7,12 +7,7 @@ session_start();
         <title>Pontos alinhados</title>
         <script type="text/javascript" src="../js/jquery.js"></script>
         <script type="text/javascript" src="../js/jquery.form.js"></script>
-        
-        <style>
-            <?php            
-            include '../styles/calcs.css';
-            ?>        
-        </style>
+        <link rel="stylesheet" type="text/css" href="../styles/calcs.css" />
         <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     </head>
     <body>

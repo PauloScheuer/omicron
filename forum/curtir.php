@@ -3,12 +3,9 @@ session_start();
 function InserirCurt($pergunta){
     
     include '../conexao.php';
-    
-            $sql = "INSERT INTO curtidas (idCurt, idPergunta, idUsuario) VALUES (:idc, :idp, :idu)";
+    $idu = $_SESSION['idUsuario'];
+            $sql = "INSERT INTO curtidas ( idPergunta, idUsuario) VALUES ('$pergunta', '$idu')";
             $enviarbanco = $db->prepare($sql);
-            $enviarbanco->bindValue(":idc", "", PDO::PARAM_STR);
-            $enviarbanco->bindValue(":idp", $pergunta, PDO::PARAM_STR);
-            $enviarbanco->bindValue(":idu", $_SESSION['idUsuario'], PDO::PARAM_STR);
             if ($enviarbanco->execute()) {
                 
                 } else {
